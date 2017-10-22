@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="/assets/style.css">
+  </head>
+  <body>
+    <% include partials/nav.ejs %>
+ <h1>contact ejs</h1>
+ <img src="img/comingsoon.jpg" alt="coomingsoon img">
+ <form id="contact-form" method="post" action="/contact">
+  <label for="">contact:</label>
+  <input type="text" name="who" value="<%= qs.person %>">
+  <label for="">departmen:</label>
+  <input type="text" name="department" value="<%= qs.dept %>">
+  <label for="">email:</label>
+ <input type="email" name="email">
+ <input type="submit" name="" value="submit">
+ </form>
+
+  </body>
+</html>
